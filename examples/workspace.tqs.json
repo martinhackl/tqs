@@ -1,0 +1,24 @@
+{
+  "version": "1",
+  "name": "mysession",
+  "env": {
+    "FOO": "bar",
+    "PORT": "1234"
+  },
+  "windows": [
+    {
+      "name": "primary",
+      "path": "/etc",
+      "cmd": "ls"
+    },
+    {
+      "name": "frontend",
+      "path": "/home/{user}",
+      "cmd": "echo $FOO; echo $PORT"
+    },
+    {
+      "name": "backend",
+      "path": "/etc"
+    }
+  ]
+}
