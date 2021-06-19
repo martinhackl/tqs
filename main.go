@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/martinhackl/tqs/lib"
+	"github.com/martinhackl/tqs/internal/lib"
 )
 
 type subsituteFlags []string
